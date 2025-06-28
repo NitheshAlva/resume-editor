@@ -21,6 +21,7 @@ import Link from 'next/link';
 import { toast } from 'sonner';
 import { ResumeSchema } from '@/lib/resume.schema';
 import { z } from 'zod';
+import backend_path from '@/lib/config';
 
 export default function Home() {
   const [resumes, setResumes] = useState<z.infer<typeof ResumeSchema>[]>([]);
@@ -33,7 +34,7 @@ export default function Home() {
     const fetchResumes = async () => {
       setLoading(true);
       try {
-        const resp = await axios.get('http://localhost:8000/resumes');
+        const resp = await axios.get(backend_path+'/resumes');
         if (resp.data) {
           setResumes(resp.data);
         }
@@ -93,7 +94,7 @@ export default function Home() {
         label: 'Delete',
         onClick: async () => {
           try {
-            await axios.delete(`http://localhost:8000/resume/${id}`);
+            await axios.delete(backend_path+`/resume/${id}`);
             setResumes(resumes.filter(resume => resume.id !== id));
             toast.success(`"${title}" deleted successfully`);
           } catch (error) {

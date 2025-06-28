@@ -27,6 +27,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import axios from 'axios';
+import backend_path from '@/lib/config';
 
 const ResumeEditor = () => {
   const params = useParams();
@@ -63,7 +64,7 @@ const ResumeEditor = () => {
     try {
       setIsLoading(true);
       toast.loading('Parsing your resume...', { id: 'parse' });
-      const resp = await axios.post('http://localhost:8000/parse-resume', {
+      const resp = await axios.post(backend_path+'/parse-resume', {
         content: window.tempResumeData.content
       });
       
@@ -99,7 +100,7 @@ const ResumeEditor = () => {
       setIsLoading(true);
       toast.loading('Loading resume...', { id: 'fetch' });
       
-      const resp = await axios.get(`http://localhost:8000/resume/${resumeId}`);
+      const resp = await axios.get(backend_path+`/resume/${resumeId}`);
       const resumeData = resp.data;
       
       if (resumeData) {
@@ -144,7 +145,7 @@ const ResumeEditor = () => {
       const values = form.getValues();
       const content = JSON.stringify(values, null, 2);
       
-      const resp = await axios.post('http://localhost:8000/ai-enhance-suggestions', {
+      const resp = await axios.post(backend_path+'/ai-enhance-suggestions', {
         content: content,
       });
       
@@ -165,7 +166,7 @@ const ResumeEditor = () => {
       setIsSaving(true);
       toast.loading('Saving resume...', { id: 'save' });
       
-      const resp = await axios.post('http://localhost:8000/save-resume', data);
+      const resp = await axios.post(backend_path+'/save-resume', data);
       
       if (resp.status === 200) {
         const updatedData = {
@@ -188,7 +189,7 @@ const ResumeEditor = () => {
     setEnhancing(prev => ({ ...prev, [key]: true }));
 
     try {
-      const resp = await axios.post('http://localhost:8000/ai-enhance', {
+      const resp = await axios.post(backend_path+'/ai-enhance', {
         section: section,
         content: content
       });
@@ -422,7 +423,7 @@ const ResumeEditor = () => {
                 type="button"
                 variant="outline"
                 onClick={() => enhanceContent('summary', form.getValues('summary') || '')}
-                disabled={enhancing.summary}
+                disabled={enhancing.summary|| form.getValues('summary')?.trim() === ''}
               >
                 <Sparkles className="w-4 h-4 mr-2" />
                 {enhancing.summary ? 'Enhancing...' : 'Enhance with AI'}
@@ -546,7 +547,7 @@ const ResumeEditor = () => {
                     variant="outline"
                     size="sm"
                     onClick={() => enhanceContent('experience', form.getValues(`experience.${index}.description`) || '', index)}
-                    disabled={enhancing[`experience-${index}`]}
+                    disabled={enhancing[`experience-${index}`]||form.getValues(`experience.${index}.description`)?.trim() === ''}
                   >
                     <Sparkles className="w-4 h-4 mr-2" />
                     {enhancing[`experience-${index}`] ? 'Enhancing...' : 'Enhance with AI'}

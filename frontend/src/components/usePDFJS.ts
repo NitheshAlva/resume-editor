@@ -1,4 +1,3 @@
-// /components/usePDFJS.ts
 "use client";
 import { useEffect, useState } from "react";
 import * as PDFJS from "pdfjs-dist/types/src/pdf";

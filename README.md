@@ -94,10 +94,10 @@ cd backend
 pip install -r requirements.txt
 
 # Start FastAPI development server
-uvicorn main:app --reload
+uvicorn main:app --port 8001 --reload
 ```
 
-The backend API will be available at: `http://localhost:8000`
+The backend API will be available at: `http://localhost:8001`
 
 - **API Documentation**: `http://localhost:8000/docs` (Swagger UI)
 - **Alternative Docs**: `http://localhost:8000/redoc` (ReDoc)
@@ -112,29 +112,15 @@ Create a `.env` file in the `backend/` directory:
 # backend/.env
 GEMINI_API_KEY="your_gemini_api_key_here"
 
-# Optional: Configure CORS origins
-CORS_ORIGINS="http://localhost:3000,http://127.0.0.1:3000"
-
-# Optional: Configure upload settings
-MAX_FILE_SIZE=10485760  # 10MB in bytes
-ALLOWED_EXTENSIONS=".pdf,.docx"
 ```
 
-### Frontend Configuration (Optional)
-
-Create a `.env.local` file in the `frontend/` directory:
-
-```bash
-# frontend/.env.local
-NEXT_PUBLIC_API_URL="http://localhost:8000"
-```
 
 ## 🚀 Usage
 
 1. **Start Backend Server**:
    ```bash
    cd backend
-   uvicorn main:app --reload
+   uvicorn main:app --port 8001 --reload
    ```
 
 2. **Start Frontend Server** (in a new terminal):
