@@ -1,0 +1,47 @@
+# ===== Node.js / Next.js (frontend) =====
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+frontend/.env.local
+frontend/.env
+frontend/.eslintcache
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.parcel-cache/
+frontend/dist/
+frontend/out/
+
+# ===== Python / FastAPI (backend) =====
+backend/__pycache__/
+backend/*.py[cod]
+backend/env/
+backend/venv/
+backend/.venv/
+backend/.env
+backend/.env.*
+
+# ===== macOS / System files =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE/editor folders =====
+.vscode/
+.idea/
+
+# ===== General Logs =====
+*.log
+
+# ===== Pytest / Coverage =====
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+
+# ===== Build Artifacts =====
+*.egg-info/
+*.egg
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/

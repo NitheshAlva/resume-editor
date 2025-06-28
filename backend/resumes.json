@@ -1,0 +1,118 @@
+[
+    {
+        "id": "resume-12345",
+        "title": "nithesh-2025 nddd",
+        "name": "Nithesh Alva",
+        "summary": "\u2728 AI Enhanced: Experienced software engineer with a passion for developing scalable web applications and working across the full stack.",
+        "experience": [
+            {
+                "company": "Tech Corp",
+                "role": "Frontend Developer",
+                "description": "Developed and maintained user interfaces using React and TypeScript.",
+                "year": {
+                    "start": 2020,
+                    "end": 2023
+                }
+            },
+            {
+                "company": "Web Solutions Inc.",
+                "role": "Software Engineer",
+                "description": "Worked on backend services with Node.js and integrated RESTful APIs.",
+                "year": {
+                    "start": 2018,
+                    "end": 2020
+                }
+            },
+            {
+                "company": "vishwayon",
+                "role": "intern",
+                "description": "Managed and optimized a portfolio of 15+ client accounts, resulting in a 12% average increase in year-over-year revenue growth.  Developed and implemented targeted digital marketing campaigns, boosting lead generation by 20% and improving conversion rates by 15%.  Spearheaded the transition to a new CRM system, streamlining workflow processes and reducing data entry time by 30%.  Successfully negotiated and secured three new high-value client contracts, totaling $500,000 in annual revenue.  Mentored junior team members on best practices in SEO, SEM, and social media marketing, contributing to a 10% increase in team productivity.  Proactively identified and resolved critical client issues, maintaining a 98% client satisfaction rating.  Consistently exceeded quarterly performance goals, earning recognition as a top performer for three consecutive quarters.",
+                "year": {
+                    "start": 2022,
+                    "end": 2023
+                }
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Science",
+                "field": "Computer Science",
+                "year": {
+                    "start": 2014,
+                    "end": 2018
+                }
+            }
+        ],
+        "skills": [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Node.js",
+            "HTML",
+            "CSS"
+        ],
+        "suggestion": "1. **Quantify accomplishments and add impact statements to each role:**  The current descriptions are weak. Instead of \"Developed and maintained user interfaces using React and TypeScript,\" at Tech Corp,  rewrite it to something like \"Developed and maintained 5+ user interfaces using React and TypeScript, resulting in a 15% reduction in bug reports and a 10% improvement in page load speed.\"  For Web Solutions Inc., replace \"Worked on backend services with Node.js and integrated RESTful APIs\" with something quantifiable, such as \"Developed and maintained 3 key backend services using Node.js and RESTful APIs, handling an average of X requests per second and improving API response times by Y%.\"  The \"vishwayon\" internship needs significant improvement; remove \"nothing special\" and replace it with concrete tasks and achievements, even if minor.  For example, \"Developed a prototype feature using [technology], contributing to the team's understanding of [specific area].\"  Quantifiable results highlight your contributions and demonstrate your impact.\n\n2. **Strengthen the summary and tailor it to target roles:** The current summary (\"\u2728 AI Enhanced: Experienced software engineer...\") is generic and the \"AI Enhanced\" part needs justification.  If you have AI-related projects or skills, explicitly mention them with specifics. Otherwise, remove it.  Refine the summary to highlight your key skills and career goals, making it concise and impactful. For example: \"Results-oriented Full-Stack Software Engineer with 5+ years of experience building and maintaining scalable web applications using React, TypeScript, and Node.js. Proven ability to deliver high-quality products on time and within budget. Seeking a challenging role in [target industry/area].\"  Remember to tailor this to each job application.\n\n3. **Improve skill organization and add relevant skills:** The skills section is a simple list.  Categorize skills (e.g., \"Frontend,\" \"Backend,\" \"Databases,\" \"Tools\") to improve readability and make it easier for recruiters to quickly assess your capabilities. Consider adding more specific skills relevant to your experience,  such as testing frameworks (Jest, Cypress), version control (Git), databases (MongoDB, PostgreSQL), cloud platforms (AWS, Azure, GCP), or specific libraries and frameworks used in your projects.  The more specific and relevant the skills, the better the chances of matching with job descriptions.",
+        "createdAt": "2025-06-28T10:00:00.000Z",
+        "updatedAt": "2025-06-28T19:09:22.104059"
+    },
+    {
+        "id": "1751117975514",
+        "title": "Nithesh_Resume.pdf",
+        "name": "Nithesh Alva",
+        "summary": "Fullstack Developer Passionate About Competitive Programming and Web Developement",
+        "experience": [
+            {
+                "company": "Vishwayon Software Private Limited",
+                "role": "Technical Intern",
+                "description": "Actively engaged with open-source technologies such as PostgreSQL, Docker, PHP, and CoreERP-CE. insights into industry-standard technologies and real-world problem-solving, enhancing technical expertise in software development.",
+                "year": {
+                    "start": 2023,
+                    "end": 2023
+                }
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Engineering in Computer Science",
+                "field": "Computer Science",
+                "year": {
+                    "start": 2022,
+                    "end": 2026
+                }
+            }
+        ],
+        "skills": [
+            "PostgreSQL",
+            "Docker",
+            "PHP",
+            "CoreERP-CE",
+            "Next.js",
+            "TypeScript",
+            "Prisma",
+            "TailwindCSS",
+            "S3",
+            "Amazon S3",
+            "React.js",
+            "JavaScript",
+            "Supabase",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "C",
+            "C++",
+            "Python",
+            "Java",
+            "VS Code",
+            "Git",
+            "Postman",
+            "Vercel",
+            "AWS",
+            "Node.js",
+            "Linux",
+            "Competitive Programming"
+        ],
+        "suggestion": "",
+        "createdAt": "2025-06-28T19:09:53.983795",
+        "updatedAt": "2025-06-28T19:09:53.983795"
+    }
+]
